@@ -55,7 +55,7 @@ class ViewController: UIViewController
         print("in flipCard(withEmoji: \(emoji))")
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControlState.normal)
-            button.backgroundColor = #colorLiteral(red: 0.7708204842, green: 0.8249951159, blue: 1, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.8850428462, green: 0.822701931, blue: 1, alpha: 1)
         } else {
             button.setTitle(emoji, for: UIControlState.normal)
             button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
