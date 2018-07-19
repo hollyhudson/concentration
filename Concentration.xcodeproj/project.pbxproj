@@ -12,6 +12,8 @@
 		EE59A3E820CB0F6000C5F129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE59A3E620CB0F6000C5F129 /* Main.storyboard */; };
 		EE59A3EA20CB0F6500C5F129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59A3E920CB0F6500C5F129 /* Assets.xcassets */; };
 		EE59A3ED20CB0F6500C5F129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE59A3EB20CB0F6500C5F129 /* LaunchScreen.storyboard */; };
+		EE87A21920FF4E3D003B2A27 /* ConcentrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE87A21820FF4E3D003B2A27 /* ConcentrationModel.swift */; };
+		EE87A21B20FF4F20003B2A27 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE87A21A20FF4F20003B2A27 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EE59A3E920CB0F6500C5F129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE59A3EC20CB0F6500C5F129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE59A3EE20CB0F6500C5F129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE87A21820FF4E3D003B2A27 /* ConcentrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationModel.swift; sourceTree = "<group>"; };
+		EE87A21A20FF4F20003B2A27 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				EE59A3E420CB0F6000C5F129 /* ViewController.swift */,
 				EE59A3E620CB0F6000C5F129 /* Main.storyboard */,
+				EE87A21820FF4E3D003B2A27 /* ConcentrationModel.swift */,
+				EE87A21A20FF4F20003B2A27 /* Card.swift */,
 				EE59A3F420CB111300C5F129 /* Supporting Files */,
 				EE59A3EE20CB0F6500C5F129 /* Info.plist */,
 			);
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE59A3E520CB0F6000C5F129 /* ViewController.swift in Sources */,
+				EE87A21920FF4E3D003B2A27 /* ConcentrationModel.swift in Sources */,
 				EE59A3E320CB0F6000C5F129 /* AppDelegate.swift in Sources */,
+				EE87A21B20FF4F20003B2A27 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
