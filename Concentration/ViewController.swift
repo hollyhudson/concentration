@@ -40,13 +40,10 @@ class ViewController: UIViewController
        
         print("arrrr, a squid!")
         flipCount += 1
-        // let is a const
-        // putting an exclamation indicates to assume the optional is set (and your app will crash if it isn't)
         // let cardNumber = cardButtons.index(of: sender)!
         // or you can wrap it in an if so the action only happens if the variable is set, to prevent your app from crashing
         if let cardNumber = cardButtons.index(of: sender) {
 			game.chooseCard(at: cardNumber)
-            //flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
 			updateViewFromModel()
         } else {
             print("Chosen card was not in cardButtons")
@@ -64,7 +61,6 @@ class ViewController: UIViewController
 				button.setTitle("", for: UIControlState.normal)
 				button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 0.8850428462, green: 0.822701931, blue: 1, alpha: 1)
 			}
-			
 		}
 	}
 	
@@ -80,6 +76,7 @@ class ViewController: UIViewController
 		// If both conditions are true, the code is executed
 		if emoji[card.identifier] == nil, emojiChoices.count > 0 {
 				let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+				// don't reuse emojis
 				emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
 		}
 		return emoji[card.identifier] ?? "?"
